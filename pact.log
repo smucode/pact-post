@@ -1,0 +1,56 @@
+I, [2017-10-08T09:20:56.931630 #7710]  INFO -- : Registered expected interaction POST /api
+D, [2017-10-08T09:20:56.931886 #7710] DEBUG -- : {
+  "description": "a post query with some json body",
+  "providerState": "backend is in some state",
+  "request": {
+    "method": "POST",
+    "path": "/api",
+    "body": {
+      "foo": "bar"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+    },
+    "body": {
+      "foo": "bar"
+    }
+  }
+}
+I, [2017-10-08T09:20:56.940600 #7710]  INFO -- : Received request POST /api
+D, [2017-10-08T09:20:56.940732 #7710] DEBUG -- : {
+  "path": "/api",
+  "query": "",
+  "method": "post",
+  "body": {
+    "foo": "bar"
+  },
+  "headers": {
+    "Content-Length": "13",
+    "Content-Type": "application/json;charset=utf-8",
+    "Accept": "application/json, text/plain, */*",
+    "User-Agent": "axios/0.16.2",
+    "Host": "127.0.0.1:1234",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2017-10-08T09:20:56.941226 #7710]  INFO -- : Found matching response for POST /api
+D, [2017-10-08T09:20:56.941312 #7710] DEBUG -- : {
+  "status": 200,
+  "headers": {
+  },
+  "body": {
+    "foo": "bar"
+  }
+}
+I, [2017-10-08T09:20:56.947199 #7710]  INFO -- : Verifying - interactions matched for example ""
+I, [2017-10-08T09:20:56.948720 #7710]  INFO -- : Writing pact with details {:pactfile_write_mode=>"update", :consumer=>{:name=>"consumer"}, :provider=>{:name=>"provider"}}
+I, [2017-10-08T09:20:56.948847 #7710]  INFO -- : Updating pact for provider at /Users/smu/pact-post/consumer-provider.json
+I, [2017-10-08T09:20:56.949517 #7710]  INFO -- : *****************************************************************************
+I, [2017-10-08T09:20:56.949597 #7710]  INFO -- : Updating existing file ./Users/smu/pact-post/consumer-provider.json as config.pactfile_write_mode is :update
+I, [2017-10-08T09:20:56.949629 #7710]  INFO -- : Only interactions defined in this test run will be updated.
+I, [2017-10-08T09:20:56.949763 #7710]  INFO -- : As interactions are identified by description and provider state, pleased note that if either of these have changed, the old interactions won't be removed from the pact file until the specs are next run with :pactfile_write_mode => :overwrite.
+I, [2017-10-08T09:20:56.949841 #7710]  INFO -- : *****************************************************************************
+I, [2017-10-08T09:20:56.952585 #7710]  INFO -- : Cleared interactions before example ""

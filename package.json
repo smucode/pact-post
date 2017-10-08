@@ -1,0 +1,22 @@
+{
+  "name": "pact-post",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test:consumer": "mocha consumer.test.js --require babel-register --timeout 15000",
+    "test:provider": "babel-node provider-test.js",
+    "start:backend": "babel-node server.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "express": "^4.16.1",
+    "http": "0.0.0",
+    "mocha": "^4.0.1",
+    "pact": "^3.0.1",
+    "ramda": "^0.24.1"
+  }
+}

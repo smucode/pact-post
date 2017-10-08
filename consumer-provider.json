@@ -1,0 +1,34 @@
+{
+  "consumer": {
+    "name": "consumer"
+  },
+  "provider": {
+    "name": "provider"
+  },
+  "interactions": [
+    {
+      "description": "a post query with some json body",
+      "providerState": "backend is in some state",
+      "request": {
+        "method": "POST",
+        "path": "/api",
+        "body": {
+          "foo": "bar"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": {
+          "foo": "bar"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}
